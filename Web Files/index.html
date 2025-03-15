@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECG Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ECG Monitoring System</h1>
+        
+        <div class="status-panel">
+            <div class="status-item">
+                <h2>Heart Rate</h2>
+                <div class="status-value" id="heart-rate">-- BPM</div>
+            </div>
+            <div class="status-item">
+                <h2>Calories Burned</h2>
+                <div class="status-value" id="calories">-- kcal</div>
+            </div>
+            <div class="status-item">
+                <h2>Status</h2>
+                <div class="status-value" id="status">Normal</div>
+            </div>
+        </div>
+        
+        <div class="ecg-container">
+            <h2>ECG Signal</h2>
+            <canvas id="ecg-chart"></canvas>
+        </div>
+        
+        <div class="anomaly-container">
+            <h2>Anomaly Log</h2>
+            <div class="anomaly-log" id="anomaly-log">
+                <div class="log-entry">No anomalies detected</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
