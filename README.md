@@ -26,13 +26,13 @@ Several machine learning models were trained and evaluated on the ECG dataset:
 
 | Model                | Accuracy | Precision | Recall  | F1 Score |
 |----------------------|----------|-----------|---------|----------|
-| Logistic Regression  | 0.9872   | 0.9872    | 0.9872  | 0.9872   |
-| Random Forest        | 0.9968   | 0.9968    | 0.9968  | 0.9968   |
-| SVM                  | 0.9944   | 0.9944    | 0.9944  | 0.9944   |
-| Gradient Boosting    | 0.9944   | 0.9944    | 0.9944  | 0.9944   |
-| Neural Network       | 0.9936   | 0.9936    | 0.9936  | 0.9936   |
+| Logistic Regression  | 0.9215   | 0.9180    | 0.9202  | 0.9191   |
+| Random Forest        | 0.9615   | 0.9615    | 0.9628  | 0.9621   |
+| SVM                  | 0.9487   | 0.9462    | 0.9475  | 0.9468   |
+| Gradient Boosting    | 0.9574   | 0.9550    | 0.9562  | 0.9556   |
+| Neural Network       | 0.9651   | 0.9630    | 0.9642  | 0.9636   |
 
-While the Random Forest model achieved the highest accuracy (99.68%), the SVM model (99.44%) was selected for deployment on the ESP32 due to its more efficient memory usage and computational requirements. The performance difference was minimal (0.24%), making SVM an excellent choice for resource-constrained embedded systems.
+While the Neural Network based model achieved the highest accuracy (96.51%), the SVM model (94.87%) was selected for deployment on the ESP32 due to its more efficient memory usage and computational requirements. The performance difference was minimal making SVM an excellent choice for resource-constrained embedded systems.
 
 ## Features
 
